@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A512200D20B839CF00AB7347 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A512200C20B839CF00AB7347 /* AppDelegate.m */; };
+		A512201020B839CF00AB7347 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A512200F20B839CF00AB7347 /* ViewController.m */; };
+		A512201320B839CF00AB7347 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A512201120B839CF00AB7347 /* Main.storyboard */; };
+		A512201520B839D200AB7347 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A512201420B839D200AB7347 /* Assets.xcassets */; };
+		A512201820B839D200AB7347 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A512201620B839D200AB7347 /* LaunchScreen.storyboard */; };
+		A512201B20B839D200AB7347 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A512201A20B839D200AB7347 /* main.m */; };
+		A512202520B839D200AB7347 /* FEIIProjectDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A512202420B839D200AB7347 /* FEIIProjectDemoTests.m */; };
+		A512203020B839D200AB7347 /* FEIIProjectDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A512202F20B839D200AB7347 /* FEIIProjectDemoUITests.m */; };
+		A512204020B83E5300AB7347 /* CustomBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A512203F20B83E5300AB7347 /* CustomBtnViewController.m */; };
+		A512204420B8404800AB7347 /* ChangeImageFrameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A512204320B8404800AB7347 /* ChangeImageFrameButton.m */; };
+		A512204A20B842E200AB7347 /* UIImage+Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = A512204920B842E200AB7347 /* UIImage+Scale.m */; };
+		A512204E20B8554200AB7347 /* CustomViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A512204D20B8554200AB7347 /* CustomViewViewController.m */; };
+		A512205220B855AC00AB7347 /* PaddingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A512205120B855AC00AB7347 /* PaddingImageView.m */; };
+		A512205620BA746100AB7347 /* TextViewEmojiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A512205520BA746100AB7347 /* TextViewEmojiViewController.m */; };
+		A512205A20BA74D300AB7347 /* FEIKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = A512205920BA74D300AB7347 /* FEIKeyBoard.m */; };
+		A512205D20BA943200AB7347 /* EmojiTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = A512205C20BA943200AB7347 /* EmojiTextAttachment.m */; };
+		A512206020BA94D900AB7347 /* NSAttributedString+EmojiExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A512205F20BA94D900AB7347 /* NSAttributedString+EmojiExtension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A512202120B839D200AB7347 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A512200020B839CF00AB7347 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A512200720B839CF00AB7347;
+			remoteInfo = FEIIProjectDemo;
+		};
+		A512202C20B839D200AB7347 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A512200020B839CF00AB7347 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A512200720B839CF00AB7347;
+			remoteInfo = FEIIProjectDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A512200820B839CF00AB7347 /* FEIIProjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FEIIProjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A512200B20B839CF00AB7347 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A512200C20B839CF00AB7347 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A512200E20B839CF00AB7347 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A512200F20B839CF00AB7347 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A512201220B839CF00AB7347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A512201420B839D200AB7347 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A512201720B839D200AB7347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A512201920B839D200AB7347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A512201A20B839D200AB7347 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A512202020B839D200AB7347 /* FEIIProjectDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FEIIProjectDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A512202420B839D200AB7347 /* FEIIProjectDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FEIIProjectDemoTests.m; sourceTree = "<group>"; };
+		A512202620B839D200AB7347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A512202B20B839D200AB7347 /* FEIIProjectDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FEIIProjectDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A512202F20B839D200AB7347 /* FEIIProjectDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FEIIProjectDemoUITests.m; sourceTree = "<group>"; };
+		A512203120B839D200AB7347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A512203E20B83E5300AB7347 /* CustomBtnViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomBtnViewController.h; sourceTree = "<group>"; };
+		A512203F20B83E5300AB7347 /* CustomBtnViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomBtnViewController.m; sourceTree = "<group>"; };
+		A512204220B8404800AB7347 /* ChangeImageFrameButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeImageFrameButton.h; sourceTree = "<group>"; };
+		A512204320B8404800AB7347 /* ChangeImageFrameButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeImageFrameButton.m; sourceTree = "<group>"; };
+		A512204820B842E200AB7347 /* UIImage+Scale.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Scale.h"; sourceTree = "<group>"; };
+		A512204920B842E200AB7347 /* UIImage+Scale.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Scale.m"; sourceTree = "<group>"; };
+		A512204C20B8554200AB7347 /* CustomViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewViewController.h; sourceTree = "<group>"; };
+		A512204D20B8554200AB7347 /* CustomViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewViewController.m; sourceTree = "<group>"; };
+		A512205020B855AC00AB7347 /* PaddingImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaddingImageView.h; sourceTree = "<group>"; };
+		A512205120B855AC00AB7347 /* PaddingImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaddingImageView.m; sourceTree = "<group>"; };
+		A512205420BA746100AB7347 /* TextViewEmojiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewEmojiViewController.h; sourceTree = "<group>"; };
+		A512205520BA746100AB7347 /* TextViewEmojiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewEmojiViewController.m; sourceTree = "<group>"; };
+		A512205820BA74D300AB7347 /* FEIKeyBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FEIKeyBoard.h; sourceTree = "<group>"; };
+		A512205920BA74D300AB7347 /* FEIKeyBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FEIKeyBoard.m; sourceTree = "<group>"; };
+		A512205B20BA943100AB7347 /* EmojiTextAttachment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmojiTextAttachment.h; sourceTree = "<group>"; };
+		A512205C20BA943200AB7347 /* EmojiTextAttachment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmojiTextAttachment.m; sourceTree = "<group>"; };
+		A512205E20BA94D900AB7347 /* NSAttributedString+EmojiExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+EmojiExtension.h"; sourceTree = "<group>"; };
+		A512205F20BA94D900AB7347 /* NSAttributedString+EmojiExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+EmojiExtension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A512200520B839CF00AB7347 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A512201D20B839D200AB7347 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A512202820B839D200AB7347 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5121FFF20B839CF00AB7347 = {
+			isa = PBXGroup;
+			children = (
+				A512200A20B839CF00AB7347 /* FEIIProjectDemo */,
+				A512202320B839D200AB7347 /* FEIIProjectDemoTests */,
+				A512202E20B839D200AB7347 /* FEIIProjectDemoUITests */,
+				A512200920B839CF00AB7347 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A512200920B839CF00AB7347 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A512200820B839CF00AB7347 /* FEIIProjectDemo.app */,
+				A512202020B839D200AB7347 /* FEIIProjectDemoTests.xctest */,
+				A512202B20B839D200AB7347 /* FEIIProjectDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A512200A20B839CF00AB7347 /* FEIIProjectDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A512205320BA73FD00AB7347 /* TextViewEmoji */,
+				A512204B20B8550900AB7347 /* CustomView */,
+				A512203D20B83E3300AB7347 /* CustomBtn */,
+				A512200B20B839CF00AB7347 /* AppDelegate.h */,
+				A512200C20B839CF00AB7347 /* AppDelegate.m */,
+				A512200E20B839CF00AB7347 /* ViewController.h */,
+				A512200F20B839CF00AB7347 /* ViewController.m */,
+				A512201120B839CF00AB7347 /* Main.storyboard */,
+				A512201420B839D200AB7347 /* Assets.xcassets */,
+				A512201620B839D200AB7347 /* LaunchScreen.storyboard */,
+				A512201920B839D200AB7347 /* Info.plist */,
+				A512201A20B839D200AB7347 /* main.m */,
+			);
+			path = FEIIProjectDemo;
+			sourceTree = "<group>";
+		};
+		A512202320B839D200AB7347 /* FEIIProjectDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A512202420B839D200AB7347 /* FEIIProjectDemoTests.m */,
+				A512202620B839D200AB7347 /* Info.plist */,
+			);
+			path = FEIIProjectDemoTests;
+			sourceTree = "<group>";
+		};
+		A512202E20B839D200AB7347 /* FEIIProjectDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A512202F20B839D200AB7347 /* FEIIProjectDemoUITests.m */,
+				A512203120B839D200AB7347 /* Info.plist */,
+			);
+			path = FEIIProjectDemoUITests;
+			sourceTree = "<group>";
+		};
+		A512203D20B83E3300AB7347 /* CustomBtn */ = {
+			isa = PBXGroup;
+			children = (
+				A512204120B83FEC00AB7347 /* CanChangeImageFrameBtn */,
+				A512203E20B83E5300AB7347 /* CustomBtnViewController.h */,
+				A512203F20B83E5300AB7347 /* CustomBtnViewController.m */,
+			);
+			path = CustomBtn;
+			sourceTree = "<group>";
+		};
+		A512204120B83FEC00AB7347 /* CanChangeImageFrameBtn */ = {
+			isa = PBXGroup;
+			children = (
+				A512204220B8404800AB7347 /* ChangeImageFrameButton.h */,
+				A512204320B8404800AB7347 /* ChangeImageFrameButton.m */,
+				A512204820B842E200AB7347 /* UIImage+Scale.h */,
+				A512204920B842E200AB7347 /* UIImage+Scale.m */,
+			);
+			path = CanChangeImageFrameBtn;
+			sourceTree = "<group>";
+		};
+		A512204B20B8550900AB7347 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				A512204F20B8557E00AB7347 /* ImageViewCustom */,
+				A512204C20B8554200AB7347 /* CustomViewViewController.h */,
+				A512204D20B8554200AB7347 /* CustomViewViewController.m */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		A512204F20B8557E00AB7347 /* ImageViewCustom */ = {
+			isa = PBXGroup;
+			children = (
+				A512205020B855AC00AB7347 /* PaddingImageView.h */,
+				A512205120B855AC00AB7347 /* PaddingImageView.m */,
+			);
+			path = ImageViewCustom;
+			sourceTree = "<group>";
+		};
+		A512205320BA73FD00AB7347 /* TextViewEmoji */ = {
+			isa = PBXGroup;
+			children = (
+				A512205720BA748B00AB7347 /* textEmojiView */,
+				A512205420BA746100AB7347 /* TextViewEmojiViewController.h */,
+				A512205520BA746100AB7347 /* TextViewEmojiViewController.m */,
+			);
+			path = TextViewEmoji;
+			sourceTree = "<group>";
+		};
+		A512205720BA748B00AB7347 /* textEmojiView */ = {
+			isa = PBXGroup;
+			children = (
+				A512205820BA74D300AB7347 /* FEIKeyBoard.h */,
+				A512205920BA74D300AB7347 /* FEIKeyBoard.m */,
+				A512205B20BA943100AB7347 /* EmojiTextAttachment.h */,
+				A512205C20BA943200AB7347 /* EmojiTextAttachment.m */,
+				A512205E20BA94D900AB7347 /* NSAttributedString+EmojiExtension.h */,
+				A512205F20BA94D900AB7347 /* NSAttributedString+EmojiExtension.m */,
+			);
+			path = textEmojiView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A512200720B839CF00AB7347 /* FEIIProjectDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A512203420B839D200AB7347 /* Build configuration list for PBXNativeTarget "FEIIProjectDemo" */;
+			buildPhases = (
+				A512200420B839CF00AB7347 /* Sources */,
+				A512200520B839CF00AB7347 /* Frameworks */,
+				A512200620B839CF00AB7347 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FEIIProjectDemo;
+			productName = FEIIProjectDemo;
+			productReference = A512200820B839CF00AB7347 /* FEIIProjectDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A512201F20B839D200AB7347 /* FEIIProjectDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A512203720B839D200AB7347 /* Build configuration list for PBXNativeTarget "FEIIProjectDemoTests" */;
+			buildPhases = (
+				A512201C20B839D200AB7347 /* Sources */,
+				A512201D20B839D200AB7347 /* Frameworks */,
+				A512201E20B839D200AB7347 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A512202220B839D200AB7347 /* PBXTargetDependency */,
+			);
+			name = FEIIProjectDemoTests;
+			productName = FEIIProjectDemoTests;
+			productReference = A512202020B839D200AB7347 /* FEIIProjectDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A512202A20B839D200AB7347 /* FEIIProjectDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A512203A20B839D200AB7347 /* Build configuration list for PBXNativeTarget "FEIIProjectDemoUITests" */;
+			buildPhases = (
+				A512202720B839D200AB7347 /* Sources */,
+				A512202820B839D200AB7347 /* Frameworks */,
+				A512202920B839D200AB7347 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A512202D20B839D200AB7347 /* PBXTargetDependency */,
+			);
+			name = FEIIProjectDemoUITests;
+			productName = FEIIProjectDemoUITests;
+			productReference = A512202B20B839D200AB7347 /* FEIIProjectDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A512200020B839CF00AB7347 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = feii;
+				TargetAttributes = {
+					A512200720B839CF00AB7347 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					A512201F20B839D200AB7347 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = A512200720B839CF00AB7347;
+					};
+					A512202A20B839D200AB7347 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = A512200720B839CF00AB7347;
+					};
+				};
+			};
+			buildConfigurationList = A512200320B839CF00AB7347 /* Build configuration list for PBXProject "FEIIProjectDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5121FFF20B839CF00AB7347;
+			productRefGroup = A512200920B839CF00AB7347 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A512200720B839CF00AB7347 /* FEIIProjectDemo */,
+				A512201F20B839D200AB7347 /* FEIIProjectDemoTests */,
+				A512202A20B839D200AB7347 /* FEIIProjectDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A512200620B839CF00AB7347 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A512201820B839D200AB7347 /* LaunchScreen.storyboard in Resources */,
+				A512201520B839D200AB7347 /* Assets.xcassets in Resources */,
+				A512201320B839CF00AB7347 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A512201E20B839D200AB7347 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A512202920B839D200AB7347 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A512200420B839CF00AB7347 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A512205620BA746100AB7347 /* TextViewEmojiViewController.m in Sources */,
+				A512204A20B842E200AB7347 /* UIImage+Scale.m in Sources */,
+				A512204420B8404800AB7347 /* ChangeImageFrameButton.m in Sources */,
+				A512205220B855AC00AB7347 /* PaddingImageView.m in Sources */,
+				A512205D20BA943200AB7347 /* EmojiTextAttachment.m in Sources */,
+				A512201020B839CF00AB7347 /* ViewController.m in Sources */,
+				A512206020BA94D900AB7347 /* NSAttributedString+EmojiExtension.m in Sources */,
+				A512201B20B839D200AB7347 /* main.m in Sources */,
+				A512204020B83E5300AB7347 /* CustomBtnViewController.m in Sources */,
+				A512204E20B8554200AB7347 /* CustomViewViewController.m in Sources */,
+				A512200D20B839CF00AB7347 /* AppDelegate.m in Sources */,
+				A512205A20BA74D300AB7347 /* FEIKeyBoard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A512201C20B839D200AB7347 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A512202520B839D200AB7347 /* FEIIProjectDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A512202720B839D200AB7347 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A512203020B839D200AB7347 /* FEIIProjectDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A512202220B839D200AB7347 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A512200720B839CF00AB7347 /* FEIIProjectDemo */;
+			targetProxy = A512202120B839D200AB7347 /* PBXContainerItemProxy */;
+		};
+		A512202D20B839D200AB7347 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A512200720B839CF00AB7347 /* FEIIProjectDemo */;
+			targetProxy = A512202C20B839D200AB7347 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A512201120B839CF00AB7347 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A512201220B839CF00AB7347 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A512201620B839D200AB7347 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A512201720B839D200AB7347 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A512203220B839D200AB7347 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A512203320B839D200AB7347 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A512203520B839D200AB7347 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FEIIProjectDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.feii.FEIIProjectDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A512203620B839D200AB7347 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FEIIProjectDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.feii.FEIIProjectDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A512203820B839D200AB7347 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FEIIProjectDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.feii.FEIIProjectDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FEIIProjectDemo.app/FEIIProjectDemo";
+			};
+			name = Debug;
+		};
+		A512203920B839D200AB7347 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FEIIProjectDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.feii.FEIIProjectDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FEIIProjectDemo.app/FEIIProjectDemo";
+			};
+			name = Release;
+		};
+		A512203B20B839D200AB7347 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FEIIProjectDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.feii.FEIIProjectDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FEIIProjectDemo;
+			};
+			name = Debug;
+		};
+		A512203C20B839D200AB7347 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FEIIProjectDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.feii.FEIIProjectDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FEIIProjectDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A512200320B839CF00AB7347 /* Build configuration list for PBXProject "FEIIProjectDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A512203220B839D200AB7347 /* Debug */,
+				A512203320B839D200AB7347 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A512203420B839D200AB7347 /* Build configuration list for PBXNativeTarget "FEIIProjectDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A512203520B839D200AB7347 /* Debug */,
+				A512203620B839D200AB7347 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A512203720B839D200AB7347 /* Build configuration list for PBXNativeTarget "FEIIProjectDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A512203820B839D200AB7347 /* Debug */,
+				A512203920B839D200AB7347 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A512203A20B839D200AB7347 /* Build configuration list for PBXNativeTarget "FEIIProjectDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A512203B20B839D200AB7347 /* Debug */,
+				A512203C20B839D200AB7347 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A512200020B839CF00AB7347 /* Project object */;
+}
