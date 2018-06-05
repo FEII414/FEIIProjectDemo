@@ -24,6 +24,11 @@
 		A512205A20BA74D300AB7347 /* FEIKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = A512205920BA74D300AB7347 /* FEIKeyBoard.m */; };
 		A512205D20BA943200AB7347 /* EmojiTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = A512205C20BA943200AB7347 /* EmojiTextAttachment.m */; };
 		A512206020BA94D900AB7347 /* NSAttributedString+EmojiExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A512205F20BA94D900AB7347 /* NSAttributedString+EmojiExtension.m */; };
+		A5BAD6B320BEF047001A5877 /* TestScrollHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BAD6B220BEF047001A5877 /* TestScrollHeadViewController.m */; };
+		A5EE4B1220C3C7E600869006 /* FEIIBleChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EE4B1120C3C7E600869006 /* FEIIBleChatViewController.m */; };
+		A5EE4B1520C3C99000869006 /* FEIIBleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EE4B1420C3C99000869006 /* FEIIBleManager.m */; };
+		A5EE4B1820C3CA7900869006 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EE4B1720C3CA7900869006 /* CoreBluetooth.framework */; };
+		A5EE4B1B20C3D58B00869006 /* FEIIBlePeriphalManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EE4B1A20C3D58B00869006 /* FEIIBlePeriphalManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +83,15 @@
 		A512205C20BA943200AB7347 /* EmojiTextAttachment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmojiTextAttachment.m; sourceTree = "<group>"; };
 		A512205E20BA94D900AB7347 /* NSAttributedString+EmojiExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+EmojiExtension.h"; sourceTree = "<group>"; };
 		A512205F20BA94D900AB7347 /* NSAttributedString+EmojiExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+EmojiExtension.m"; sourceTree = "<group>"; };
+		A5BAD6B120BEF047001A5877 /* TestScrollHeadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestScrollHeadViewController.h; sourceTree = "<group>"; };
+		A5BAD6B220BEF047001A5877 /* TestScrollHeadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestScrollHeadViewController.m; sourceTree = "<group>"; };
+		A5EE4B1020C3C7E600869006 /* FEIIBleChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FEIIBleChatViewController.h; sourceTree = "<group>"; };
+		A5EE4B1120C3C7E600869006 /* FEIIBleChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FEIIBleChatViewController.m; sourceTree = "<group>"; };
+		A5EE4B1320C3C99000869006 /* FEIIBleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FEIIBleManager.h; sourceTree = "<group>"; };
+		A5EE4B1420C3C99000869006 /* FEIIBleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FEIIBleManager.m; sourceTree = "<group>"; };
+		A5EE4B1720C3CA7900869006 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		A5EE4B1920C3D58B00869006 /* FEIIBlePeriphalManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FEIIBlePeriphalManager.h; sourceTree = "<group>"; };
+		A5EE4B1A20C3D58B00869006 /* FEIIBlePeriphalManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FEIIBlePeriphalManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5EE4B1820C3CA7900869006 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +127,7 @@
 				A512202320B839D200AB7347 /* FEIIProjectDemoTests */,
 				A512202E20B839D200AB7347 /* FEIIProjectDemoUITests */,
 				A512200920B839CF00AB7347 /* Products */,
+				A5EE4B1620C3CA7900869006 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +144,8 @@
 		A512200A20B839CF00AB7347 /* FEIIProjectDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A5EE4B0E20C3C79000869006 /* Tools */,
+				A5BAD6B020BEF018001A5877 /* SomeTest */,
 				A512205320BA73FD00AB7347 /* TextViewEmoji */,
 				A512204B20B8550900AB7347 /* CustomView */,
 				A512203D20B83E3300AB7347 /* CustomBtn */,
@@ -223,6 +241,44 @@
 				A512205F20BA94D900AB7347 /* NSAttributedString+EmojiExtension.m */,
 			);
 			path = textEmojiView;
+			sourceTree = "<group>";
+		};
+		A5BAD6B020BEF018001A5877 /* SomeTest */ = {
+			isa = PBXGroup;
+			children = (
+				A5BAD6B120BEF047001A5877 /* TestScrollHeadViewController.h */,
+				A5BAD6B220BEF047001A5877 /* TestScrollHeadViewController.m */,
+			);
+			path = SomeTest;
+			sourceTree = "<group>";
+		};
+		A5EE4B0E20C3C79000869006 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A5EE4B0F20C3C7B100869006 /* BLE Chat */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		A5EE4B0F20C3C7B100869006 /* BLE Chat */ = {
+			isa = PBXGroup;
+			children = (
+				A5EE4B1020C3C7E600869006 /* FEIIBleChatViewController.h */,
+				A5EE4B1120C3C7E600869006 /* FEIIBleChatViewController.m */,
+				A5EE4B1320C3C99000869006 /* FEIIBleManager.h */,
+				A5EE4B1420C3C99000869006 /* FEIIBleManager.m */,
+				A5EE4B1920C3D58B00869006 /* FEIIBlePeriphalManager.h */,
+				A5EE4B1A20C3D58B00869006 /* FEIIBlePeriphalManager.m */,
+			);
+			path = "BLE Chat";
+			sourceTree = "<group>";
+		};
+		A5EE4B1620C3CA7900869006 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5EE4B1720C3CA7900869006 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,14 +414,18 @@
 				A512205620BA746100AB7347 /* TextViewEmojiViewController.m in Sources */,
 				A512204A20B842E200AB7347 /* UIImage+Scale.m in Sources */,
 				A512204420B8404800AB7347 /* ChangeImageFrameButton.m in Sources */,
+				A5EE4B1B20C3D58B00869006 /* FEIIBlePeriphalManager.m in Sources */,
 				A512205220B855AC00AB7347 /* PaddingImageView.m in Sources */,
 				A512205D20BA943200AB7347 /* EmojiTextAttachment.m in Sources */,
+				A5EE4B1220C3C7E600869006 /* FEIIBleChatViewController.m in Sources */,
 				A512201020B839CF00AB7347 /* ViewController.m in Sources */,
 				A512206020BA94D900AB7347 /* NSAttributedString+EmojiExtension.m in Sources */,
 				A512201B20B839D200AB7347 /* main.m in Sources */,
 				A512204020B83E5300AB7347 /* CustomBtnViewController.m in Sources */,
 				A512204E20B8554200AB7347 /* CustomViewViewController.m in Sources */,
+				A5EE4B1520C3C99000869006 /* FEIIBleManager.m in Sources */,
 				A512200D20B839CF00AB7347 /* AppDelegate.m in Sources */,
+				A5BAD6B320BEF047001A5877 /* TestScrollHeadViewController.m in Sources */,
 				A512205A20BA74D300AB7347 /* FEIKeyBoard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,6 +596,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B285PBC7R4;
 				INFOPLIST_FILE = FEIIProjectDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -552,6 +613,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B285PBC7R4;
 				INFOPLIST_FILE = FEIIProjectDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -40,6 +40,11 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(dismiss)];
     
     
+    UIImageView *iamge = [[UIImageView alloc]initWithFrame:CGRectMake(50, 200, 200, 200)];
+    iamge.image = [[UIImage imageNamed:@"fat"] imageToSize:CGSizeMake(200, 200)];
+    [self.view addSubview:iamge];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -82,7 +87,7 @@
         _imgCategoryBtn.backgroundColor = [UIColor grayColor];
         
         UIImage *image = [UIImage imageNamed:@"fat"];
-        [_imgCategoryBtn setImage:[image imageToSize:CGSizeMake(10, 10)] forState:UIControlStateNormal];
+        [_imgCategoryBtn setImage:[image imageToSize:CGSizeMake(40, 40)] forState:UIControlStateNormal];
         [_imgCategoryBtn setTitle:@"Im imgCategory change image frame" forState:UIControlStateNormal];
         _imgCategoryBtn.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 10);
         

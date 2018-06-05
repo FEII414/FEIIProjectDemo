@@ -10,12 +10,16 @@
 #import "CustomBtnViewController.h"
 #import "CustomViewViewController.h"
 #import "TextViewEmojiViewController.h"
+#import "TestScrollHeadViewController.h"
+#import "FEIIBleChatViewController.h"
 
 #define kScreenWidth [[UIScreen mainScreen]bounds].size.width
 #define kScreenHeight [[UIScreen mainScreen]bounds].size.height
 
 #define kCustomComponent 0
 #define kTextViewEmoji 1
+#define kSomeTest 2
+#define kTools 3
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -73,6 +77,24 @@
     
     
 }
+    
+- (void)gotoScrollHeader{
+    
+    
+    TestScrollHeadViewController *gotoVC = [[TestScrollHeadViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:gotoVC];
+    [self presentViewController:nav animated:true completion:nil];
+    
+}
+
+- (void)gotoBleChat{
+    
+    
+    FEIIBleChatViewController *gotoVC = [[FEIIBleChatViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:gotoVC];
+    [self presentViewController:nav animated:true completion:nil];
+    
+}
 
 #pragma mark UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -96,6 +118,21 @@
         
     }
     
+    if (indexPath.section == kSomeTest) {
+        
+        if (indexPath.row == 0) {
+            [self gotoScrollHeader];
+        }
+        
+    }
+    
+    if (indexPath.section == kTools) {
+        
+        if (indexPath.row == 0) {
+            [self gotoBleChat];
+        }
+        
+    }
     
 }
 
@@ -191,20 +228,30 @@
         
         NSDictionary *dic =@{@"title":@"button"};
         [dataArray addObject:dic];
-        
         dic =@{@"title":@"view"};
         [dataArray addObject:dic];
-        
         NSDictionary *dicSetion =@{@"title":@"customComponent",@"array":dataArray};
         [_dataArraySetion addObject:dicSetion];
         
         
         dataArray = [[NSMutableArray alloc]init];
-        
         dic =@{@"title":@"textViewEmoji"};
         [dataArray addObject:dic];
-        
         dicSetion =@{@"title":@"textViewEmoji",@"array":dataArray};
+        [_dataArraySetion addObject:dicSetion];
+        
+        
+        dataArray = [[NSMutableArray alloc]init];
+        dic =@{@"title":@"scrollHeader"};
+        [dataArray addObject:dic];
+        dicSetion =@{@"title":@"sometest",@"array":dataArray};
+        [_dataArraySetion addObject:dicSetion];
+        
+        
+        dataArray = [[NSMutableArray alloc]init];
+        dic =@{@"title":@"blechat"};
+        [dataArray addObject:dic];
+        dicSetion =@{@"title":@"tools",@"array":dataArray};
         [_dataArraySetion addObject:dicSetion];
         
     }
