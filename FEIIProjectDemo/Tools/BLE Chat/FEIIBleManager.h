@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
+#import <UIKit/UIKit.h>
 
 @protocol FEIIBleManagerDelegate <NSObject>
 
@@ -23,6 +24,7 @@
 
 @property (nonatomic, weak) id<FEIIBleManagerDelegate> delegate;
 @property (nonatomic, strong) CBPeripheral *myPeripheral;
+@property (nonatomic, weak) UITextView *textView;
 
 
 - (void)connectMyPeripheral;
@@ -33,5 +35,7 @@
 
 //
 - (void)initCentralManager;
+
+- (instancetype)initWithTextView:(UITextView *)textView;
 
 @end

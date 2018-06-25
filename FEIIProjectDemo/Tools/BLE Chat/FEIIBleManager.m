@@ -8,10 +8,17 @@
 
 #import "FEIIBleManager.h"
 
+#define kPeripheralDeviceName @"iPhone" //
+#define kServicesUUID @"4E5EA11F-455C-446F-967F-2BF5A9CCFBE9"
+#define kCharacteristic @"B4CD9CAC-2C3D-4F35-ADB0-26C3C12BD37D"
 
-#define kPeripheralDeviceName @"FEII"
-#define kServicesUUID @"123321"
-#define kCharacteristic @"1233211111"
+#define ServiceUUID1 @"ECBD5F37-4F6A-4A4C-8442-8AA9B9BB39ED"
+#define ServiceUUID2 @"AAB8925E-EA78-43A5-86BA-F7FAA9CCB209"
+
+#define notiyCharacteristicUUID @"5C644DB2-7394-4D65-90BF-BA411A696115"
+#define readwriteCharacteristicUUID @"149270A4-1D98-4097-A6AA-B0B50E5A2E46"
+#define readCharacteristicUUID @"A336F6BB-9516-44F4-9102-D2D41C421AED"
+
 
 @interface FEIIBleManager()
 
@@ -24,13 +31,28 @@
 
 @implementation FEIIBleManager
 
+
+- (instancetype)initWithTextView:(UITextView *)textView{
+    
+    if (self = [super init]) {
+        
+        _textView = textView;
+        return self;
+        
+    }
+    return nil;
+    
+}
 //write
 
 - (void)sendDataToPeripharl:(NSString *)str{
     
     if (_readCharacteristic) {
-        NSData *data = [self dataWithString:str];
-        NSLog(@"--data--%@",data);
+//        NSData *data = [self dataWithString:str];
+        
+        NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
+        NSLog(@"--data--%@---datalenth-%lu",data,data.length);
+        
         
         [_myPeripheral writeValue:data forCharacteristic:_readCharacteristic type:CBCharacteristicWriteWithResponse];
     }
@@ -63,7 +85,7 @@
     }
     if (central.state == CBManagerStatePoweredOn) {
         //扫瞄
-        [_centralManager scanForPeripheralsWithServices:nil options:nil];
+        [_centralManager scanForPeripheralsWithServices:@[[CBUUID UUIDWithString:kServicesUUID]]  options:nil];
         
     }
     
@@ -73,13 +95,14 @@
 //执行扫瞄的动作，如果扫瞄到外设
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *,id> *)advertisementData RSSI:(NSNumber *)RSSI{
     
-    if ([self.delegate respondsToSelector:@selector(scanOneReturn:)]) {
-        [self.delegate scanOneReturn:peripheral];
-    }
+//    if ([self.delegate respondsToSelector:@selector(scanOneReturn:)]) {
+//        [self.delegate scanOneReturn:peripheral];
+//    }
     
+    NSLog(@"perName---%@",peripheral.name);
     
-    if ([peripheral.name isEqualToString:kPeripheralDeviceName] ) {
-        
+//    if ([peripheral.name isEqualToString:kPeripheralDeviceName] ) {
+    
         NSLog(@"%@--connect",kPeripheralDeviceName);
         _myPeripheral = peripheral;
         _myPeripheral.delegate = self;
@@ -87,7 +110,7 @@
         //连接
         [_centralManager connectPeripheral:_myPeripheral options:nil];
         
-    }
+//    }
     
 }
 
@@ -112,6 +135,10 @@
 - (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error{
     
     NSLog(@"disconnect---error-%@",error);
+    if ([peripheral.name isEqualToString:kCharacteristic]) {
+        [_centralManager connectPeripheral:peripheral options:nil];
+    }
+//    [_centralManager scanForPeripheralsWithServices:@[[CBUUID UUIDWithString:kServicesUUID]] options:nil];
     
 }
 
@@ -141,6 +168,7 @@
         if ([[c UUID] isEqual:[CBUUID UUIDWithString:kCharacteristic]]) {
             NSLog(@"找到读征");
             _readCharacteristic = c;
+            [peripheral setNotifyValue:true forCharacteristic:c];
         }
         
     }
@@ -166,7 +194,11 @@
         
         NSData *data = characteristic.value;
         NSString* value = [self hexadecimalString:data];
-        NSLog(@"characteristic(读取到的) : %@, data : %@, value : %@", characteristic, data, value);
+        
+//        _textView.text = [NSString stringWithFormat:@"characteristic(读取到的) : %@, data : %@, value : %@", characteristic, data, value];
+        _textView.text = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+        
+//        NSLog(@"characteristic(读取到的) : %@, data : %@, value : %@", characteristic, data, value);
         
     }
     

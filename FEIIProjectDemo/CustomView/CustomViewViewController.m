@@ -8,10 +8,13 @@
 
 #import "CustomViewViewController.h"
 #import "PaddingImageView.h"
+#import "DottedView.h"
 
 @interface CustomViewViewController ()
 
 @property (nonatomic, strong) PaddingImageView *paddingView;
+
+@property (nonatomic, strong) DottedView *dottedView;
 
 @end
 
@@ -26,6 +29,8 @@
     [self.view addSubview:self.paddingView];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(dismiss)];
+    
+    [self.view addSubview:self.dottedView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,6 +55,20 @@
     }
     return _paddingView;
     
+    
+}
+
+- (DottedView *)dottedView{
+    
+    if (_dottedView == nil) {
+        
+        _dottedView = [[DottedView alloc]initWithFrame:CGRectMake(20, 100, 300, 60)];
+        _dottedView.backgroundColor = [UIColor blueColor];
+        
+        
+        [_dottedView drawLineOfDashByCAShapeLayer:_dottedView lineLength:4 lineSpacing:9 lineColor:[UIColor redColor] lineDirection:false];
+    }
+    return _dottedView;
     
 }
 

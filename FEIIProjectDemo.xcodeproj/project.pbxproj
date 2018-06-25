@@ -25,6 +25,7 @@
 		A512205D20BA943200AB7347 /* EmojiTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = A512205C20BA943200AB7347 /* EmojiTextAttachment.m */; };
 		A512206020BA94D900AB7347 /* NSAttributedString+EmojiExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A512205F20BA94D900AB7347 /* NSAttributedString+EmojiExtension.m */; };
 		A5BAD6B320BEF047001A5877 /* TestScrollHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BAD6B220BEF047001A5877 /* TestScrollHeadViewController.m */; };
+		A5DCF16A20E113E200A683BA /* DottedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DCF16920E113E200A683BA /* DottedView.m */; };
 		A5EE4B1220C3C7E600869006 /* FEIIBleChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EE4B1120C3C7E600869006 /* FEIIBleChatViewController.m */; };
 		A5EE4B1520C3C99000869006 /* FEIIBleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EE4B1420C3C99000869006 /* FEIIBleManager.m */; };
 		A5EE4B1820C3CA7900869006 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EE4B1720C3CA7900869006 /* CoreBluetooth.framework */; };
@@ -85,6 +86,8 @@
 		A512205F20BA94D900AB7347 /* NSAttributedString+EmojiExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+EmojiExtension.m"; sourceTree = "<group>"; };
 		A5BAD6B120BEF047001A5877 /* TestScrollHeadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestScrollHeadViewController.h; sourceTree = "<group>"; };
 		A5BAD6B220BEF047001A5877 /* TestScrollHeadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestScrollHeadViewController.m; sourceTree = "<group>"; };
+		A5DCF16820E113E200A683BA /* DottedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DottedView.h; sourceTree = "<group>"; };
+		A5DCF16920E113E200A683BA /* DottedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DottedView.m; sourceTree = "<group>"; };
 		A5EE4B1020C3C7E600869006 /* FEIIBleChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FEIIBleChatViewController.h; sourceTree = "<group>"; };
 		A5EE4B1120C3C7E600869006 /* FEIIBleChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FEIIBleChatViewController.m; sourceTree = "<group>"; };
 		A5EE4B1320C3C99000869006 /* FEIIBleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FEIIBleManager.h; sourceTree = "<group>"; };
@@ -204,6 +207,7 @@
 		A512204B20B8550900AB7347 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				A5DCF16720E113A500A683BA /* dotView */,
 				A512204F20B8557E00AB7347 /* ImageViewCustom */,
 				A512204C20B8554200AB7347 /* CustomViewViewController.h */,
 				A512204D20B8554200AB7347 /* CustomViewViewController.m */,
@@ -250,6 +254,15 @@
 				A5BAD6B220BEF047001A5877 /* TestScrollHeadViewController.m */,
 			);
 			path = SomeTest;
+			sourceTree = "<group>";
+		};
+		A5DCF16720E113A500A683BA /* dotView */ = {
+			isa = PBXGroup;
+			children = (
+				A5DCF16820E113E200A683BA /* DottedView.h */,
+				A5DCF16920E113E200A683BA /* DottedView.m */,
+			);
+			path = dotView;
 			sourceTree = "<group>";
 		};
 		A5EE4B0E20C3C79000869006 /* Tools */ = {
@@ -417,6 +430,7 @@
 				A5EE4B1B20C3D58B00869006 /* FEIIBlePeriphalManager.m in Sources */,
 				A512205220B855AC00AB7347 /* PaddingImageView.m in Sources */,
 				A512205D20BA943200AB7347 /* EmojiTextAttachment.m in Sources */,
+				A5DCF16A20E113E200A683BA /* DottedView.m in Sources */,
 				A5EE4B1220C3C7E600869006 /* FEIIBleChatViewController.m in Sources */,
 				A512201020B839CF00AB7347 /* ViewController.m in Sources */,
 				A512206020BA94D900AB7347 /* NSAttributedString+EmojiExtension.m in Sources */,
@@ -598,13 +612,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B285PBC7R4;
 				INFOPLIST_FILE = FEIIProjectDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.feii.FEIIProjectDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -615,13 +630,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B285PBC7R4;
 				INFOPLIST_FILE = FEIIProjectDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.feii.FEIIProjectDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

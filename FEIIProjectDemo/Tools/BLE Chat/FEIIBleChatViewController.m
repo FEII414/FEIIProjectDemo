@@ -80,19 +80,24 @@
 
 - (void)clickCenter:(UIButton *)sender{
     
-    _centerManager = [[FEIIBleManager alloc]init];
+    _centerManager = [[FEIIBleManager alloc]initWithTextView:_textViewCenterl];
     _centerManager.delegate = self;
     [_centerManager initCentralManager];
     
     
-    [self.view addSubview:self.mainTable];
+//    [self.view addSubview:self.mainTable];
     
 }
 
 - (void)clickPeriphal:(UIButton *)sender{
     
-    _periManager = [[FEIIBlePeriphalManager alloc]init];
+    _periManager = [[FEIIBlePeriphalManager alloc]initWithTextView:_textPeripheral];
     [_periManager initPeripheralManager];
+    
+    __weak typeof(self) weakSelf = self;
+    _periManager.returnStr = ^(NSString *str) {
+        weakSelf.textPeripheral.text = str;
+    };
     
 }
 
@@ -104,7 +109,7 @@
 
 - (void)clickPeriphalSend:(UIButton *)sender{
     
-    
+    [_periManager writeDataToCentral:_textPeripheral.text];
     
 }
 
@@ -150,6 +155,12 @@
 - (void)dimiss{
     
     [self dismissViewControllerAnimated:true completion:nil];
+    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    [self.view endEditing:true];
     
 }
 

@@ -7,11 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+typedef void(^ReturnStr)(NSString *);
 
 @interface FEIIBlePeriphalManager : NSObject
+
+@property (nonatomic, assign) ReturnStr returnStr;
+@property (nonatomic, weak) UITextView *textView;
 
 - (void)initPeripheralManager;
 
 - (void)writeDataToCentral:(NSString *)str;
+
+- (instancetype)initWithTextView:(UITextView *)textView;
+
 
 @end
