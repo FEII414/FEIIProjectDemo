@@ -9,6 +9,7 @@
 #import "CustomBtnViewController.h"
 #import "UIImage+Scale.h"
 #import "ChangeImageFrameButton.h"
+#import "AddMinusBtnView.h"
 
 #define kScreenWidth [[UIScreen mainScreen]bounds].size.width
 #define kScreenHeight [[UIScreen mainScreen]bounds].size.height
@@ -43,6 +44,10 @@
     UIImageView *iamge = [[UIImageView alloc]initWithFrame:CGRectMake(50, 200, 200, 200)];
     iamge.image = [[UIImage imageNamed:@"fat"] imageToSize:CGSizeMake(200, 200)];
     [self.view addSubview:iamge];
+    
+    AddMinusBtnView *addMBtnView = [[AddMinusBtnView alloc]initWithFrame:CGRectMake(30, 500, 200, 50)];
+    addMBtnView.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:addMBtnView];
     
     
 }

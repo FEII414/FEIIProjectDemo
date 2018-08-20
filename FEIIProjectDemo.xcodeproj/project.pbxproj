@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A18AFCB212AB5CC00DBB0DF /* AddMinusBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A18AFCA212AB5CC00DBB0DF /* AddMinusBtnView.m */; };
 		A512200D20B839CF00AB7347 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A512200C20B839CF00AB7347 /* AppDelegate.m */; };
 		A512201020B839CF00AB7347 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A512200F20B839CF00AB7347 /* ViewController.m */; };
 		A512201320B839CF00AB7347 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A512201120B839CF00AB7347 /* Main.storyboard */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A18AFC9212AB5CC00DBB0DF /* AddMinusBtnView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddMinusBtnView.h; sourceTree = "<group>"; };
+		5A18AFCA212AB5CC00DBB0DF /* AddMinusBtnView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddMinusBtnView.m; sourceTree = "<group>"; };
 		A512200820B839CF00AB7347 /* FEIIProjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FEIIProjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A512200B20B839CF00AB7347 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A512200C20B839CF00AB7347 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -123,6 +126,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A18AFC8212AB53100DBB0DF /* AddMinusBtn */ = {
+			isa = PBXGroup;
+			children = (
+				5A18AFC9212AB5CC00DBB0DF /* AddMinusBtnView.h */,
+				5A18AFCA212AB5CC00DBB0DF /* AddMinusBtnView.m */,
+			);
+			path = AddMinusBtn;
+			sourceTree = "<group>";
+		};
 		A5121FFF20B839CF00AB7347 = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +198,7 @@
 		A512203D20B83E3300AB7347 /* CustomBtn */ = {
 			isa = PBXGroup;
 			children = (
+				5A18AFC8212AB53100DBB0DF /* AddMinusBtn */,
 				A512204120B83FEC00AB7347 /* CanChangeImageFrameBtn */,
 				A512203E20B83E5300AB7347 /* CustomBtnViewController.h */,
 				A512203F20B83E5300AB7347 /* CustomBtnViewController.m */,
@@ -434,6 +447,7 @@
 				A5EE4B1220C3C7E600869006 /* FEIIBleChatViewController.m in Sources */,
 				A512201020B839CF00AB7347 /* ViewController.m in Sources */,
 				A512206020BA94D900AB7347 /* NSAttributedString+EmojiExtension.m in Sources */,
+				5A18AFCB212AB5CC00DBB0DF /* AddMinusBtnView.m in Sources */,
 				A512201B20B839D200AB7347 /* main.m in Sources */,
 				A512204020B83E5300AB7347 /* CustomBtnViewController.m in Sources */,
 				A512204E20B8554200AB7347 /* CustomViewViewController.m in Sources */,
